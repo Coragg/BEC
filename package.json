@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "astro": "^3.0.1",
+    "astro-bootstrap": "^0.6.1",
     "bootstrap": "^5.3.1"
   }
 }
