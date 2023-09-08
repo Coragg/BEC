@@ -6,17 +6,12 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
 
     <!-- Usamos una fila (row) para contener la imagen y el contenido -->
-    <div class="row">
-        <!-- Columna para la imagen -->
-        <div class="col-md-4 sin-margen">
-            <img src="https://images.unsplash.com/photo-1568667256549-094345857637?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2030&q=80" alt="Biblioteca" class="img-fluid float-left">
-        </div>
-
+    <div class="row" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/ed/Biblioteca_del_IPCE.jpg); background-repeat: no-repeat; background-size: 100%;">
         <!-- Columna para el contenido -->
         <div class="container py-5 h-10 col-md-7" >
           <div class="row d-flex justify-content-center align-items-center h-100" >
             <div class="col-12 col-md-8 col-lg-6 col-xl-5" >
-              <div class="card shadow-2-strong" style="border-radius: 1rem;" >
+              <div class="card shadow-2-strong" style="border-radius: 1rem; margin-top: 200px; margin-bottom: 270px;" >
                 <div class="card-body p-5 text-center  bg-primary"style="border-radius: 1rem;" >
       
                   <h3 class="mb-5">Reservar Libro</h3>
