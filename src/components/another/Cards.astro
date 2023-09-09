@@ -8,7 +8,7 @@ interface Post{
 const {link="", title, messageButton="Enter", information=""} = Astro.props; 
 ---
 
-<div class="card" style="width:300px">
+<div class="card shadow" style="width:300px">
   <img class="card-img-top" src={link} alt="Card image" style="width:100%">
   <div class="card-body">
     <h4 class="card-title">{title}</h4>
@@ -16,3 +16,14 @@ const {link="", title, messageButton="Enter", information=""} = Astro.props;
     <a href="#" class="btn btn-primary" style="">{messageButton}</a>
   </div>
 </div>
+
+
+<style>
+  .card {
+    transition: transform .3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.04); 
+  }
+  </style>
