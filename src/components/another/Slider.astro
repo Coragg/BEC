@@ -1,193 +1,202 @@
-<!-- ---
-import Card from "./Cards.astro";
-
 ---
+---
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-<div id="carouselExampleControls" class="carousel slide carousel-multi-item" data-bs-items="3">
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-
-      <div class="row">
-        <div class="card col-md-3">
-          <img src="https://www.loqueleo.com/mx/uploads/2018/07/resized/800_portada-un-libro-web.jpg" class="card-img-top" alt="Imagen 1">
+      <div class="cards-wrapper">
+        <div class="card">
+          <img src="https://www.loqueleo.com/mx/uploads/2018/07/resized/800_portada-un-libro-web.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Título 1</h5>
-            <p class="card-text">Descripción 1.</p>
-            <div class="d-flex justify-content-center">
-              <button class="btn btn-primary" type="button">Reproducir</button>
-            </div>
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-      
-        <div class="card col-md-3">
-          <img src="https://www.loqueleo.com/mx/uploads/2018/07/resized/800_portada-un-libro-web.jpg" class="card-img-top" alt="Imagen 1">
+
+        <div class="card">
+          <img src="https://www.loqueleo.com/mx/uploads/2018/07/resized/800_portada-un-libro-web.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Título 1</h5>
-            <p class="card-text">Descripción 1.</p>
-            <div class="d-flex justify-content-center">
-              <button class="btn btn-primary" type="button">Reproducir</button>
-            </div>
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
 
-        <div class="card col-md-3">
-          <img src="https://www.loqueleo.com/mx/uploads/2018/07/resized/800_portada-un-libro-web.jpg" class="card-img-top" alt="Imagen 1">
+        <div class="card">
+          <img src="https://www.loqueleo.com/mx/uploads/2018/07/resized/800_portada-un-libro-web.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Título 1</h5>
-            <p class="card-text">Descripción 1.</p>
-            <div class="d-flex justify-content-center">
-              <button class="btn btn-primary" type="button">Reproducir</button>
-            </div>
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
 
-      </div>
+        <div class="card">
+          <img src="https://www.loqueleo.com/mx/uploads/2018/07/resized/800_portada-un-libro-web.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
 
-    </div>
-    <div class="carousel-item">
-      <div class="card col-md-3">
-        <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
-        <div class="card-body">
-          <h5 class="card-title">Título 2</h5>
-          <p class="card-text">Descripción 2.</p>
-          <div class="d-flex justify-content-center">
-            <button class="btn btn-primary" type="button">Reproducir</button>
+        <div class="card">
+          <img src="https://www.loqueleo.com/mx/uploads/2018/07/resized/800_portada-un-libro-web.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://www.loqueleo.com/mx/uploads/2018/07/resized/800_portada-un-libro-web.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://www.loqueleo.com/mx/uploads/2018/07/resized/800_portada-un-libro-web.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="carousel-item">
-      <div class="card col-md-3">
-        <img src="imagen3.jpg" class="card-img-top" alt="Imagen 3">
-        <div class="card-body">
-          <h5 class="card-title">Título 3</h5>
-          <p class="card-text">Descripción 3.</p>
-          <div class="d-flex justify-content-center">
-            <button class="btn btn-primary" type="button">Reproducir</button>
-          </div>
-        </div>
-      </div>
-    </div>
+
+
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Anterior</span>
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Siguiente</span>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
   </button>
-
 </div>
- -->
+  
+
+<style>
+  .cards-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto; /* Utilizamos "auto" para habilitar el desplazamiento horizontal con el mouse */
+    max-width: 100%;
+  }
+
+  .carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    max-height: 400px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .card {
+    flex: 0 0 auto;
+    width: 300px;
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+    scroll-snap-align: start;
+  }
+
+  .card img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .card img {
+      height: 11em;
+    }
+    
+    /* Cambia el comportamiento en pantallas más grandes */
+    .cards-wrapper {
+      overflow-x: hidden; /* Elimina el desplazamiento horizontal en pantallas más grandes */
+      justify-content: center; /* Centra las tarjetas en pantallas más grandes */
+    }
+  }
+</style>
 
 
 
 
+<!-- <style>
+  .cards-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: scroll; /* Cambiamos a "scroll" para habilitar el desplazamiento con el mouse */
+    max-width: 100%;
+    scrollbar-width: none; /* Eliminamos la barra de desplazamiento en navegadores modernos */
+    -ms-overflow-style: none; /* Eliminamos la barra de desplazamiento en Internet Explorer */
+  }
 
+  .cards-wrapper::-webkit-scrollbar {
+    display: none; /* Eliminamos la barra de desplazamiento en navegadores basados en WebKit */
+  }
 
+  .carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    max-height: 400px;
+  }
 
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
+  .card {
+    flex: 0 0 auto;
+    width: 300px;
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+    scroll-snap-align: start;
+  }
 
+  .card img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-
-  <!-- Contenedor de tarjetas para películas o series -->
-    <!-- Carrusel de tarjetas para películas o series -->
-    <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-          <div class="carousel-item active">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-md-4">
-                          <div class="card mb-4">
-                              <img src="imagen1.jpg" class="card-img-top" alt="Película 1">
-                              <div class="card-body">
-                                  <h5 class="card-title">Película 1</h5>
-                                  <p class="card-text">Descripción de la película 1.</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-4">
-                          <div class="card mb-4">
-                              <img src="imagen2.jpg" class="card-img-top" alt="Película 2">
-                              <div class="card-body">
-                                  <h5 class="card-title">Película 2</h5>
-                                  <p class="card-text">Descripción de la película 2.</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-4">
-                          <div class="card mb-4">
-                              <img src="imagen3.jpg" class="card-img-top" alt="Película 3">
-                              <div class="card-body">
-                                  <h5 class="card-title">Película 3</h5>
-                                  <p class="card-text">Descripción de la película 3.</p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="carousel-item active">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card mb-4">
-                            <img src="imagen1.jpg" class="card-img-top" alt="Película 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Película 4</h5>
-                                <p class="card-text">Descripción de la película 1.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4">
-                            <img src="imagen2.jpg" class="card-img-top" alt="Película 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Película 5</h5>
-                                <p class="card-text">Descripción de la película 2.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4">
-                            <img src="imagen3.jpg" class="card-img-top" alt="Película 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Película 6</h5>
-                                <p class="card-text">Descripción de la película 3.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-          <!-- Puedes agregar más elementos .carousel-item según sea necesario -->
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-      </button>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  @media (min-width: 768px) {
+    .card img {
+      height: 11em;
+    }
+    
+    /* Cambia el comportamiento en pantallas más grandes */
+    .cards-wrapper {
+      overflow-x: hidden; /* Elimina el desplazamiento horizontal en pantallas más grandes */
+      justify-content: center; /* Centra las tarjetas en pantallas más grandes */
+    }
+  }
+</style> -->
