@@ -1,0 +1,31 @@
+---
+interface Post{
+    link?: string;
+    title: string;
+    messageButton?: string;
+    information?: string;
+}
+const {link="", title, messageButton="Enter", information=""} = Astro.props; 
+---
+
+<div class="card shadow" style="width:300px">
+  <img class="card-img-top" src={link} alt="Card image" style="width:100%">
+  <div class="card-body">
+    <h4 class="card-title">{title}</h4>
+    <p class="card-text">{information}</p>
+    <a href="#" class="btn btn-primary" style="">{messageButton}</a>
+  </div>
+</div>
+
+
+<style>
+  .card {
+    transition: transform .3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.04); 
+  }
+
+
+</style>
