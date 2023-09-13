@@ -87,116 +87,52 @@
   
 
 <style>
-  .cards-wrapper {
-    display: flex;
-    justify-content: flex-start;
-    overflow-x: auto; /* Utilizamos "auto" para habilitar el desplazamiento horizontal con el mouse */
-    max-width: 100%;
-  }
+.cards-wrapper {
+  display: flex;
+  overflow-x: auto; /* Permite el scroll horizontal */
+  gap: 20px; /* Espacio entre las tarjetas */
+  padding: 20px; /* Espacio en los extremos del contenedor */
+  scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+  -ms-overflow-style: none; /* Oculta la barra de desplazamiento en Internet Explorer y Edge */
+}
 
-  .carousel-inner {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-y: hidden;
-    max-height: 400px;
-  }
+.cards-wrapper::-webkit-scrollbar {
+  display: none; /* Oculta la barra de desplazamiento en navegadores basados en WebKit (Chrome, Safari) */
+}
 
-  .carousel-control-prev,
-  .carousel-control-next {
-    background-color: #e1e1e1;
-    width: 5vh;
-    height: 5vh;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-  }
 
   .card {
-    flex: 0 0 auto;
-    width: 300px;
-    margin: 0 0.5em;
-    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-    border: none;
-    border-radius: 0;
-    scroll-snap-align: start;
+      flex: 0 0 auto;
+      width: 300px; /* Ancho fijo para cada tarjeta (ajusta según tus necesidades) */
+      box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+      border: none;
+      border-radius: 0;
   }
 
   .card img {
-    max-width: 100%;
-    max-height: 100%;
+      max-width: 100%;
+      max-height: 100%;
   }
 
+  
+
   @media (min-width: 768px) {
-    .card img {
-      height: 11em;
-    }
-    
-    /* Cambia el comportamiento en pantallas más grandes */
-    .cards-wrapper {
-      overflow-x: hidden; /* Elimina el desplazamiento horizontal en pantallas más grandes */
-      justify-content: center; /* Centra las tarjetas en pantallas más grandes */
-    }
+      .card img {
+          height: 11em;
+      }
   }
 </style>
 
 
+<script>
+const cardsWrapper = document.querySelector(".cards-wrapper");
 
+cardsWrapper.addEventListener("wheel", (event) => {
+  const wheelEvent = event as WheelEvent; // Convertir event a WheelEvent
 
-<!-- <style>
-  .cards-wrapper {
-    display: flex;
-    justify-content: flex-start;
-    overflow-x: scroll; /* Cambiamos a "scroll" para habilitar el desplazamiento con el mouse */
-    max-width: 100%;
-    scrollbar-width: none; /* Eliminamos la barra de desplazamiento en navegadores modernos */
-    -ms-overflow-style: none; /* Eliminamos la barra de desplazamiento en Internet Explorer */
+  if (wheelEvent.deltaY !== 0) {
+    event.preventDefault();
+    cardsWrapper.scrollLeft += wheelEvent.deltaY;
   }
-
-  .cards-wrapper::-webkit-scrollbar {
-    display: none; /* Eliminamos la barra de desplazamiento en navegadores basados en WebKit */
-  }
-
-  .carousel-inner {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-y: hidden;
-    max-height: 400px;
-  }
-
-  .carousel-control-prev,
-  .carousel-control-next {
-    background-color: #e1e1e1;
-    width: 5vh;
-    height: 5vh;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .card {
-    flex: 0 0 auto;
-    width: 300px;
-    margin: 0 0.5em;
-    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-    border: none;
-    border-radius: 0;
-    scroll-snap-align: start;
-  }
-
-  .card img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-
-  @media (min-width: 768px) {
-    .card img {
-      height: 11em;
-    }
-    
-    /* Cambia el comportamiento en pantallas más grandes */
-    .cards-wrapper {
-      overflow-x: hidden; /* Elimina el desplazamiento horizontal en pantallas más grandes */
-      justify-content: center; /* Centra las tarjetas en pantallas más grandes */
-    }
-  }
-</style> -->
+});
+</script>
