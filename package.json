@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/deno": "^5.0.0",
     "astro-bootstrap": "^0.6.1",
-    "bootstrap": "^5.3.1"
+    "bootstrap": "^5.3.1",
+    "bootstrap-icons": "^1.11.0"
   }
 }
