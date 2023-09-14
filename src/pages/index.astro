@@ -5,17 +5,6 @@ import Cards from '../components/another/CardsAnimados.astro'
 ---
 <Layout title="Home">
 
-    <style>
-      /* Establece un tamaño máximo para las imágenes en el carrusel */
-      .carousel-img {
-        max-width: 100%;
-        max-height: 400px; 
-        min-height: 400px;
-        background-size:cover;
-        margin: 0 auto; /* Centra las imágenes horizontalmente */
-      }
-    </style>
-
     <div id="demo" class="carousel slide " data-bs-ride="carousel">
 
         <!-- Indicators/dots -->
@@ -76,4 +65,12 @@ import Cards from '../components/another/CardsAnimados.astro'
     margin-top: 1em;
   }
 
+  /* Establece un tamaño máximo para las imágenes en el carrusel */
+  .carousel-img {
+    max-width: 100%;
+    max-height: 400px; 
+    min-height: 400px;
+    background-size:cover;
+    margin: 0 auto; /* Centra las imágenes horizontalmente */
+  }
 </style>
