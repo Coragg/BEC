@@ -126,7 +126,8 @@
 
 <script>
 const cardsWrapper = document.querySelector(".cards-wrapper");
-
+const prevButton = document.querySelector(".carousel-control-prev");
+const nextButton = document.querySelector(".carousel-control-next");
 cardsWrapper.addEventListener("wheel", (event) => {
   const wheelEvent = event as WheelEvent; // Convertir event a WheelEvent
 
@@ -134,5 +135,13 @@ cardsWrapper.addEventListener("wheel", (event) => {
     event.preventDefault();
     cardsWrapper.scrollLeft += wheelEvent.deltaY;
   }
+});
+
+prevButton.addEventListener("click", () => {
+  cardsWrapper.scrollLeft -= 100; // Ajusta la cantidad de desplazamiento necesario
+});
+
+nextButton.addEventListener("click", () => {
+  cardsWrapper.scrollLeft += 100; // Ajusta la cantidad de desplazamiento necesario
 });
 </script>
