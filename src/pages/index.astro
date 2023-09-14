@@ -1,65 +1,100 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Cards from '../components/another/CardsAnimados.astro'
-
+import Layout from "../layouts/Layout.astro";
+import Cards from "../components/another/CardsAnimados.astro";
 ---
+
 <Layout title="Home">
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide-to="0"
+        class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"
+      ></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"
+      ></button>
+    </div>
 
-    <div id="demo" class="carousel slide " data-bs-ride="carousel">
-
-        <!-- Indicators/dots -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button> 
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-        </div>
-      
-        <!-- The slideshow/carousel -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://www.parliament.uk/contentassets/aa8b9933d3cb4364b827e7a60ea898e0/hl_library_roger-harris2022.jpg?format=webp&width=1000&quality=85" alt="Los Angeles" class="d-block w-100 carousel-img">
-          </div>
-          <div class="carousel-item">
-            <img src="https://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/8/19/1408432390748/4557b0ab-d47d-4434-91c9-6b44b9d17c26-2060x1236.jpeg" alt="Chicago" class="d-block w-100 carousel-img">
-          </div>
-          <div class="carousel-item">
-            <img src="https://www.rd.com/wp-content/uploads/sites/2/2016/10/impressive-libraries-Michigan-University-of-Michigan-Law-Library-.jpg" alt="New York" class="d-block w-100 carousel-img">
-          </div>
-        </div>
-      
-        <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://www.parliament.uk/contentassets/aa8b9933d3cb4364b827e7a60ea898e0/hl_library_roger-harris2022.jpg?format=webp&width=1000&quality=85"
+          alt="Los Angeles"
+          class="d-block w-100 carousel-img"
+        />
       </div>
-      <h1 class="titleCards  ">Publicaciones mas importantes</h1>
-
-<br>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 mb-4  d-flex justify-content-center">
-            <Cards link="https://www.loqueleo.com/mx/uploads/2018/07/resized/800_portada-un-libro-web.jpg" title="John Doe" information="Some example text some example text. John Doe is an architect and engineer" />
-          </div>
-          <div class="col-md-4 mb-4  d-flex justify-content-center"> 
-            <Cards link="https://www.loqueleo.com/mx/uploads/2018/07/resized/800_portada-un-libro-web.jpg" title="John Doe" information="Some example text some example text. John Doe is an architect and engineer" />
-          </div>
-          <div class="col-md-4 mb-4  d-flex justify-content-center"> 
-            <Cards link="https://www.loqueleo.com/mx/uploads/2018/07/resized/800_portada-un-libro-web.jpg" title="John Doe" information="Some example text some example text. John Doe is an architect and engineer" />
-          </div>
-        </div>        
-
+      <div class="carousel-item">
+        <img
+          src="https://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/8/19/1408432390748/4557b0ab-d47d-4434-91c9-6b44b9d17c26-2060x1236.jpeg"
+          alt="Chicago"
+          class="d-block w-100 carousel-img"
+        />
       </div>
+      <div class="carousel-item">
+        <img
+          src="https://www.rd.com/wp-content/uploads/sites/2/2016/10/impressive-libraries-Michigan-University-of-Michigan-Law-Library-.jpg"
+          alt="New York"
+          class="d-block w-100 carousel-img"
+        />
+      </div>
+    </div>
 
-      <br>
+    <!-- Left and right controls/icons -->
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#demo"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#demo"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <h1 class="titleCards">Publicaciones mas importantes</h1>
 
+  <br />
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4 d-flex justify-content-center">
+        <Cards
+          link="https://www.loqueleo.com/mx/uploads/2018/07/resized/800_portada-un-libro-web.jpg"
+          title="John Doe"
+          information="Some example text some example text. John Doe is an architect and engineer"
+        />
+      </div>
+      <div class="col-md-4 mb-4 d-flex justify-content-center">
+        <Cards
+          link="https://www.loqueleo.com/mx/uploads/2018/07/resized/800_portada-un-libro-web.jpg"
+          title="John Doe"
+          information="Some example text some example text. John Doe is an architect and engineer"
+        />
+      </div>
+      <div class="col-md-4 mb-4 d-flex justify-content-center">
+        <Cards
+          link="https://www.loqueleo.com/mx/uploads/2018/07/resized/800_portada-un-libro-web.jpg"
+          title="John Doe"
+          information="Some example text some example text. John Doe is an architect and engineer"
+        />
+      </div>
+    </div>
+  </div>
+
+  <br />
 </Layout>
 
-
 <style>
-  .titleCards{
+  .titleCards {
     color: black;
     text-align: center;
     margin-top: 1em;
@@ -68,9 +103,9 @@ import Cards from '../components/another/CardsAnimados.astro'
   /* Establece un tamaño máximo para las imágenes en el carrusel */
   .carousel-img {
     max-width: 100%;
-    max-height: 400px; 
+    max-height: 400px;
     min-height: 400px;
-    background-size:cover;
+    background-size: cover;
     margin: 0 auto; /* Centra las imágenes horizontalmente */
   }
 </style>
