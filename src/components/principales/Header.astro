@@ -57,5 +57,27 @@ img {
   width: 8vh;
   height: 6vh;
 }
+
+
+/* Cambiar el color del texto al pasar el cursor sobre un enlace */
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Cambia el color a tu preferencia */
+  transition: color 0.3s ease; /* Agregar una transición suave */
+}
+
+/* Cambiar el color del icono de usuario al pasar el cursor sobre él */
+.navbar-nav .nav-link:hover .fa-user {
+  color: #007bff; /* Cambia el color a tu preferencia */
+  transition: color 0.3s ease; /* Agregar una transición suave */
+}
+/* Cambiar el grosor del texto al pasar el cursor sobre un enlace */
+/* Cambiar el grosor del texto y la altura al pasar el cursor sobre un enlace */
+.navbar-nav .nav-link:not(.fa-user):hover {
+  font-weight: 800; /* Cambia el grosor a tu preferencia */
+  padding-top: 10px; /* Ajusta la altura superior a tu preferencia */
+  padding-bottom: 10px; /* Ajusta la altura inferior a tu preferencia */
+  transition: font-weight 0.3s ease, padding 0.3s ease; /* Agregar una transición suave */
+}
+
 </style>
 
