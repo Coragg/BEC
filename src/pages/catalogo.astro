@@ -10,7 +10,7 @@ import Layout from "../layouts/Layout.astro";
         <!-- Pestañas -->
         <ul class="nav nav-tabs" id="myTabs" role="tablist">
             <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Consulta de cat&aacute;logo</a>
+                <a class="nav-link active" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Consulta de catalogo</a>
             </li>
             <li class="nav-item" role="presentation">
                 <a class="nav-link" id="tab2-tab" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Documentos Encontrados</a>
@@ -22,13 +22,13 @@ import Layout from "../layouts/Layout.astro";
             <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
                 <!-- Contenido de la Pestaña 1 -->
                 <div class="container">
-                  <h3>B&uacute;squeda de documentos</h3>
+                  <h3>Búsqueda de documentos</h3>
                   <hr></hr>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle text-secondary mb-3" type="button" id="tipoDocumentoDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%; background-color: #fff; border: 1px solid #ccc;">
+                                    <button class="btn btn-secondary dropdown-toggle text-secondary" type="button" id="tipoDocumentoDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%; background-color: #fff; border: 1px solid #ccc;">
                                         <span class="mr-auto">Tipo de Documento</span>
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="tipoDocumentoDropdown" style="width: 100%; background-color: #fff;">
@@ -55,19 +55,19 @@ import Layout from "../layouts/Layout.astro";
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="form-group mb-3 mt-2">
-                                <input type="text" class="form-control mt-4" id="titulo" placeholder="Título">
+                        <div class="col-md-9">
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control" id="titulo" placeholder="Título" style="margin-top: 25px; margin-left: 70px;">
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="form-group mb-3 mt-2">
-                                <input type="text" class="form-control" id="autor" placeholder="Autor">
+                        <div class="col-md-9">
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control" id="autor" placeholder="Autor" style="margin-left: 70px;">
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="form-group mb-3 mt-2">
-                                <input type="text" class="form-control" id="tema" placeholder="Tema">
+                        <div class="col-md-9">
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control" id="tema" placeholder="Tema" style="margin-left: 70px;">
                             </div>
                         </div>
                     </div>
@@ -175,14 +175,12 @@ import Layout from "../layouts/Layout.astro";
         <!-- Botones debajo de las Pestañas -->
         <div class="mt-4">
             <button class="btn btn-primary" style="background-color: #8B4513; border-color: #8B4513;">Volver</button>
-            <button class="btn btn-secondary" style="background-color: #8B4513; border-color: #8B4513;margin-left: 20px;">Aplicar Filtros</button>
+            <button class="btn btn-secondary" style="background-color: #8B4513; border-color: #8B4513;">Aplicar Filtros</button>
         </div>        
     </div>
   </div>
 
-</Layout>
-
-<style>
+  <style>
     /* Establece las variables de colores personalizados para las pestañas */
     :root {
         --bs-primary: #a37b57;/* Cambia el color de fondo de las pestañas seleccionadas */
@@ -230,3 +228,4 @@ import Layout from "../layouts/Layout.astro";
     margin-left: -45%; /* Alinea el texto al 2/5 del ancho horizontal */
     }
   </style>
+</Layout>

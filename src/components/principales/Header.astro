@@ -1,9 +1,20 @@
-<nav class="navbar navbar-expand-lg blur border-radius-sm top-0 z-index-3 shadow sticky-top py-0.5 start-0 end-0" id="miNavbar">  
+<nav
+  class="navbar navbar-expand-lg blur border-radius-sm top-0 z-index-3 shadow sticky-top py-0.5 start-0 end-0"
+  id="miNavbar"
+>
   <div class="container px-1">
     <a href="/">
-      <img class="imagen-responsive" src="Logo.png" alt="Logo"/>
-    </a>  
-    <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <img class="imagen-responsive" src="Logo.png" alt="Logo" />
+    </a>
+    <button
+      class="navbar-toggler shadow-none ms-2"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navigation"
+      aria-controls="navigation"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon mt-2">
         <span class="navbar-toggler-bar bar1"></span>
         <span class="navbar-toggler-bar bar2"></span>
@@ -13,17 +24,29 @@
     <div class="collapse navbar-collapse" id="navigation">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link text-dark letra font-weight-bold d-flex align-items-center me-2 " aria-current="page" href="/">
+          <a
+            class="nav-link text-dark letra font-weight-bold d-flex align-items-center me-2"
+            aria-current="page"
+            href="/"
+          >
             INICIO
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark letra weight-bold d-flex align-items-center me-2 " aria-current="page" href="/catalogo">
+          <a
+            class="nav-link text-dark letra weight-bold d-flex align-items-center me-2"
+            aria-current="page"
+            href="/catalogo"
+          >
             CATALOGO
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark letra font-weight-bold d-flex align-items-center me-2 " aria-current="page" href="/reservas">
+          <a
+            class="nav-link text-dark letra font-weight-bold d-flex align-items-center me-2"
+            aria-current="page"
+            href="/reservas"
+          >
             RESERVA
           </a>
         </li>
@@ -35,49 +58,44 @@
       </ul>
     </div>
   </div>
-</nav>   
+</nav>
 
 <style>
   .letra {
-    font-weight: bold;
+    font-weight: 400;
   }
 
-#miNavbar {
-  background-color: white !important;
-  transition: background-color 0.3s ease;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
+  #miNavbar {
+    background-color: white !important;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
 
-.navbar-scroll {
-  background-color: white !important;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
+  .navbar-scroll {
+    background-color: white !important;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
 
-img {
-  width: 8vh;
-  height: 6vh;
-}
+  img {
+    width: 8vh;
+    height: 6vh;
+  }
 
+  /* Cambiar el color del texto al pasar el cursor sobre un enlace */
+  .navbar-nav .nav-link:hover {
+    color: #007bff; /* Cambia el color a tu preferencia */
+    transition: color 0.3s ease; /* Agregar una transición suave */
+  }
+/* Estilos para dispositivos de escritorio */
+@media (min-width: 768px) {
+  .navbar-nav .nav-link:not(.fa-user) {
+    transition: transform 0.8s ease; /* Transición suave para el tamaño */
+  }
 
-/* Cambiar el color del texto al pasar el cursor sobre un enlace */
-.navbar-nav .nav-link:hover {
-  color: #007bff; /* Cambia el color a tu preferencia */
-  transition: color 0.3s ease; /* Agregar una transición suave */
-}
-
-/* Cambiar el color del icono de usuario al pasar el cursor sobre él */
-.navbar-nav .nav-link:hover .fa-user {
-  color: #007bff; /* Cambia el color a tu preferencia */
-  transition: color 0.3s ease; /* Agregar una transición suave */
-}
-/* Cambiar el grosor del texto al pasar el cursor sobre un enlace */
-/* Cambiar el grosor del texto y la altura al pasar el cursor sobre un enlace */
-.navbar-nav .nav-link:not(.fa-user):hover {
-  font-weight: 800; /* Cambia el grosor a tu preferencia */
-  padding-top: 10px; /* Ajusta la altura superior a tu preferencia */
-  padding-bottom: 10px; /* Ajusta la altura inferior a tu preferencia */
-  transition: font-weight 0.3s ease, padding 0.3s ease; /* Agregar una transición suave */
+  .navbar-nav .nav-link:not(.fa-user):hover {
+    transform: scale(1.1); /* Cambiar el tamaño a tu preferencia */
+    font-weight: 600; /* Eliminar el efecto de negrita */
+  }
 }
 
 </style>
-
