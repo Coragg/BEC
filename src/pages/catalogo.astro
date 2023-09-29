@@ -14,19 +14,27 @@ import Documents from "../components/catalogo/DocumentoEncontrado.astro";
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="card shadow-2-strong" style="border-radius: 1rem;background-color: #F0D2B9;">
-                <!-- Pestañas (Tabs) -->
-                <ul class="nav nav-tabs" id="myTabs" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link active" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Consulta de catalogo</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="tab2-tab" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Documento encontrado</a>
-                    </li>
+    <div class="container" style="margin-bottom: 5vh;">
 
-                </ul>
+        <div class="row">
+            <!-- Pestañas (Tabs) -->
+            <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active tabs-letter" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Consulta de catalogo</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link tabs-letter" id="tab2-tab" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Documento encontrado</a>
+                </li>
+
+            </ul>
+        </div>
+
+
+        <div class="row">
+
+
+            <div class="card shadow-2-strong" style="border-radius: 1rem;background-color: #F0D2B9;">
+
 
                 <!-- Contenido de las pestañas -->
                 <div class="tab-content" id="myTabsContent">
@@ -49,13 +57,9 @@ import Documents from "../components/catalogo/DocumentoEncontrado.astro";
                     </div>
                 </div>
 
-
-            <br>
-
             </div>
         </div>
     </div>
-
     <br>
 </Layout>
 
@@ -72,11 +76,26 @@ import Documents from "../components/catalogo/DocumentoEncontrado.astro";
     .btn-custom {
         width: 100%; /* Establece el ancho deseado para los botones */
        // max-width: 200px; /* Establece el ancho máximo si lo deseas */
+
     }
 
     .btn-container {
         width: 100%;
+        margin-bottom: 20px;
     }
+
+    .tabs-letter {
+        color: #fff;
+        font-weight: bold;
+        background: #F0D2B9;
+    }
+
+    .card.shadow-2-strong {
+        background-color: #F0D2B9;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
 
 </style>
 
