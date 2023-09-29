@@ -1,0 +1,67 @@
+<div>
+    <h2 class="text-color">Búsqueda de documentos</h2>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle text-secondary mb-3" type="button" id="tipoDocumentoDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%; background-color: #fff; border: 1px solid #ccc;">
+                        <span class="mr-auto">Tipo de Documento</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="tipoDocumentoDropdown" style="width: 100%; background-color: #fff;">
+                        <li><a class="dropdown-item" href="#" data-value="opcion1">Libros Técnicos</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="opcion2">Libros Prácticos</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="opcion3">Libros Divulgativos</a></li>
+                    </ul>
+                    <input type="hidden" name="tipoDocumento">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle text-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%; background-color: #fff; border: 1px solid #ccc;">
+                        <span class="mr-auto">Categoría</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="tipoDocumentoDropdown" style="width: 100%; background-color: #fff;">
+                        <li><a class="dropdown-item" href="#" data-value="opcion1">Ingenieria Informática</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="opcion2">Ingenieria Industrial</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="opcion3">Ingenieria en Sistemas</a></li>
+                    </ul>
+                    <input type="hidden" id="tipoDocumento" name="tipoDocumento">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group mb-3 mt-2">
+                <input type="text" class="form-control mt-4" id="titulo" placeholder="Título">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group mb-3 mt-2">
+                <input type="text" class="form-control" id="autor" placeholder="Autor">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group mb-3 mt-2">
+                <input type="text" class="form-control" id="tema" placeholder="Tema">
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<style>
+    .text-color {
+        color: #57412E;
+        font-weight: bold;
+        margin-top: 0.5em;
+    }
+
+
+
+</style>
