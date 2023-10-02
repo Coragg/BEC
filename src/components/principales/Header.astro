@@ -32,15 +32,15 @@
             INICIO
           </a>
         </li>
-        <li class="nav-item">
-          <a
-            class="nav-link text-dark letra weight-bold d-flex align-items-center me-2"
-            aria-current="page"
-            href="/catalogo"
-          >
-            CATALOGO
-          </a>
-        </li>
+        <div class="dropdown">
+          <li class="nav-item ">
+            <a class="nav-link text-dark letra font-weight-bold d-flex align-items-center me-2" data-bs-toggle="dropdown">Catalogo</a>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item" href="/catalogoUsuario">Usuario</a></li>
+              <li><a class="dropdown-item" href="/catalogo">Empleado</a></li>
+            </ul>
+          </li>
+        </div>
         <li class="nav-item">
           <a
             class="nav-link text-dark letra font-weight-bold d-flex align-items-center me-2"
